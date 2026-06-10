@@ -11,8 +11,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="winter">
-      <body className="bg-gradient-to-br from-slate-50 to-blue-50/30 min-h-screen text-slate-800 antialiased selection:bg-primary/30">
+    <html lang="en" data-theme="winter" suppressHydrationWarning>
+      <body suppressHydrationWarning className="bg-gradient-to-br from-slate-50 to-blue-50/30 min-h-screen text-slate-800 antialiased selection:bg-primary/30">
         <AuthProvider>
           <Navbar />
           <main className="container">
